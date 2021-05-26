@@ -1,0 +1,130 @@
+/* COMMON */ 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+.clearfix {
+    clear: both;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+}
+.bg-font {
+    font-size: 20px;
+    font-weight: 700;
+}
+.sm-font {
+    font-size: 13px;
+}
+a {
+    text-decoration: none;
+    color: #777777;
+}
+
+
+/* BANNER */
+.banner {
+    height: 100%;
+    background-image: url('/images/bankbanner.jpg');
+    background-position: center right;
+    background-size: cover;
+}
+
+
+/* MENU */
+.main-menu {
+    width: 980px;
+    height: 50px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* MAIN-MENU */
+.home {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#logo {
+    width: 24px;
+    flex-basis: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+#title {
+    flex-basis: 1;
+    color: #555555;
+}
+
+
+/* SUB_MENU */
+.sub-menu {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.people {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 20px;
+    border-right: 1px solid #e5e5e5;
+}
+.people li {
+    padding: 0 7px;
+}
+.people li:first-child{
+    padding-left: 0;
+}
+.people li:last-child{
+    padding-right: 0;
+}
+.money {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 1px solid #e5e5e5;
+}
+.money li {
+    padding: 0 7px;
+}
+.money li:first-child{
+    padding-left: 0;
+}
+.money li:last-child{
+    padding-right: 0;
+}
+
+
+/* FORM */
+.form {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.form li {
+    margin: 0 7px;
+}
+.form li:first-child {
+    margin-left: 0;
+}
+.form li:last-child {
+    margin-right: 0;
+}
+#serchoice, #glochoice {
+    outline: none;
+    border: 1px solid #afafaf;
+    border-radius: 3px;
+    padding: 4px 2px;
+}
