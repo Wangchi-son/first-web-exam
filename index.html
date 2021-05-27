@@ -55,6 +55,8 @@
             </div>
         </div>
     </header>
+    <!-- HEADER_BLANK -->
+    <div class="section header-blank"></div>
 
 
     <!-- BANNER -->
@@ -87,10 +89,79 @@
                         </div>
 
 
+                        <!-- Slider main container-->
                         <div class="pick-slide-container">
-                            <!-- Slider main container-->
                             <div class="swiper-container">
-                                <div class="swiper-wrapper"></div>
+                                <!--left값은 후에 javascript로 조정-->
+                                <div class="swiper-wrapper" style=" transition: all 0s ease-out;">
+
+                                    <!--first-->
+                                    <div class="swiper-slide go-to-work-info">
+                                        <div class="pic-img-wrapper"
+                                            style="background: url(https://cdn.notefolio.net/covers/244107_t3.jpg) no-repeat center center; background-size: cover; cursor: pointer;">
+                                        </div>
+                                        <div class="title" style="cursor: pointer;">
+                                            2021 Agile Contents Portfolio
+                                        </div>
+                                        <div class="profile">
+                                            <span class="go-profile-area" style="cursor: pointer;">
+                                                <img src="https://cdn.notefolio.net/profiles/Team_Temperature_face.jpg"
+                                                    alt="profile" class="pic icon-round">
+                                                <span class="name">Team_Temperature</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!--second-->
+                                    <div class="swiper-slide go-to-work-info">
+                                        <div class="pic-img-wrapper"
+                                            style="background: url(https://cdn.notefolio.net/covers/244326_t3.jpg) no-repeat center center; background-size: cover; cursor: pointer;">
+                                        </div>
+                                        <div class="title" style="cursor: pointer;">
+                                            [5월편] Samsung Galaxy Store X our own night.
+                                        </div>
+                                        <div class="profile">
+                                            <span class="go-profile-area" style="cursor: pointer;">
+                                                <img src="	https://cdn.notefolio.net/profiles/our_own_night_face.jpg"
+                                                    alt="profile" class="pic icon-round">
+                                                <span class="name">our own night</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!--third-->
+                                    <div class="swiper-slide go-to-work-info">
+                                        <div class="pic-img-wrapper"
+                                            style="background: url(https://cdn.notefolio.net/covers/244107_t3.jpg) no-repeat center center; background-size: cover; cursor: pointer;">
+                                        </div>
+                                        <div class="title" style="cursor: pointer;">
+                                            2021 Agile Contents Portfolio
+                                        </div>
+                                        <div class="profile">
+                                            <span class="go-profile-area" style="cursor: pointer;">
+                                                <img src="https://cdn.notefolio.net/profiles/Team_Temperature_face.jpg"
+                                                    alt="profile" class="pic icon-round">
+                                                <span class="name">Team_Temperature</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!--fourth-->
+                                    <div class="swiper-slide go-to-work-info">
+                                        <div class="pic-img-wrapper"
+                                            style="background: url(https://cdn.notefolio.net/covers/244326_t3.jpg) no-repeat center center; background-size: cover; cursor: pointer;">
+                                        </div>
+                                        <div class="title" style="cursor: pointer;">
+                                            [5월편] Samsung Galaxy Store X our own night.
+                                        </div>
+                                        <div class="profile">
+                                            <span class="go-profile-area" style="cursor: pointer;">
+                                                <img src="	https://cdn.notefolio.net/profiles/our_own_night_face.jpg"
+                                                    alt="profile" class="pic icon-round">
+                                                <span class="name">our own night</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
                                 <div class="slide-navi">
                                     <div class="button-prev">
                                         <img src="https://notefolio.net/images/commission/i-con-hero-arrow-left.svg"
@@ -105,6 +176,184 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+
+        <!-- PROJECT PART -->
+        <div class="project original-main hidden-sm hidden-xs">
+            <div class="filters-container">
+                <form name="list" method="GET">
+                    <input type="hidden" id="order" value="pick">
+                    <div class="container">
+                        <div class="filter profile-filters">
+                            <div>
+                                <div class="btn btn-sort btn-soft-pink btn-none-background active">
+                                    노트폴리오 픽
+                                </div>
+                                <div class="btn btn-sort btn-soft-pink btn-none-background btn-left-align">최신순</div>
+                                <div class="btn btn-sort btn-soft-pink btn-none-background btn-left-align">추천순</div>
+                                <span class="filter-side-divider"></span>
+
+                                <!-- 전체기간 -->
+                                <select name="from" id="from" class="select disabled" style="display: none;">
+                                    <option value="all" selected>전체기간</option>
+                                    <option value="day">최근 24시간</option>
+                                    <option value="week">최근 1주일</option>
+                                    <option value="month">최근 1달</option>
+                                    <option value="month3">최근 3달</option>
+                                </select>
+                                <div class="btn-group bootstrap-select select disabled">
+                                    <button class="btn dropdown-toggle selectpicker disabled btn-default">
+                                        <div class="filter-option pull-left">전체기간</div>
+                                        &nbsp;
+                                        <div class="caret"></div>
+                                    </button>
+                                    <div class="dropdown-menu open">
+                                        <ul class="dropdown-menu inner selectpicker" role="menu">
+                                            <li rel="0" class="disabled selected">
+                                                <a tabindex="-1" href="#">
+                                                    <span class="text">전체기간</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a></li>
+                                            <li rel="1" class="disabled">
+                                                <a tabindex="-1" href="#">
+                                                    <span class="text">최근 24시간</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="2" class="disabled">
+                                                <a tabindex="-1" href="#">
+                                                    <span class="text">최근 1주일</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="3" class="disabled">
+                                                <a tabindex="-1" href="#">
+                                                    <span class="text">최근 1달</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="4" class="disabled">
+                                                <a tabindex="-1" href="#">
+                                                    <span class="text">최근 3달</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- 전체분야 -->
+                                <select name="category" id="category" class="categories" style="display: none;">
+                                    <option selected value>전체분야</option>
+                                    <option value="J7">그래픽 디자인</option>
+                                    <option value="D7">브랜딩/편집</option>
+                                    <option value="C7">영상/모션그래픽</option>
+                                    <option value="F7">UI/UX</option>
+                                    <option value="G7">일러스트레이션</option>
+                                    <option value="B7">디지털 아트</option>
+                                    <option value="K7">타이포그래피</option>
+                                    <option value="E7">산업 디자인</option>
+                                    <option value="I7">프토그래피</option>
+                                    <option value="H7">파인아트</option>
+                                    <option value="A7">공예</option>
+                                </select>
+
+                                <div class="btn-group bootstrap-select categories dropup open">
+                                    <button type="button" class="btn dropdown-toggle selectpicker btn-default">
+                                        <div class="filter-option pull-left">전체분야</div>
+                                        &nbsp;
+                                        <div class="caret"></div>
+                                    </button>
+
+
+                                    <div class="dropdown-menu open"
+                                        style="max-height: 617px; overflow: hidden; min-height: 94px; display: none;">
+                                        <ul class="dropdown-menu inner selectpicker" role="menu"
+                                            style="max-height: 595px; overflow-y: auto; min-height: 72px;">
+                                            <li rel="0" class="selected">
+                                                <a tableindex="0">
+                                                    <span class="text">전체분야</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="1">
+                                                <a tableindex="0">
+                                                    <span class="text">그래픽 디자인</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="2">
+                                                <a tableindex="0">
+                                                    <span class="text">브랜딩/편집</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="3">
+                                                <a tableindex="0">
+                                                    <span class="text">영상/모션그래픽</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="4">
+                                                <a tableindex="0">
+                                                    <span class="text">UI/UX</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="5">
+                                                <a tableindex="0">
+                                                    <span class="text">일러스트레이션</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="6">
+                                                <a tableindex="0">
+                                                    <span class="text">디지털 아트</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="7">
+                                                <a tableindex="0">
+                                                    <span class="text">타이포그래피</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="8">
+                                                <a tableindex="0">
+                                                    <span class="text">산업 디자인</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="9">
+                                                <a tableindex="0">
+                                                    <span class="text">포토그래피</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="10">
+                                                <a tableindex="0">
+                                                    <span class="text">파인아트</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                            <li rel="11">
+                                                <a tableindex="0">
+                                                    <span class="text">공예</span>
+                                                    <i class="glyphicon glyphicon-ok icon-ok check-mark"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 의뢰가능한 회원을 찾고 계세요? -->
+                        <a href="#" class="go-to-project"></a>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
