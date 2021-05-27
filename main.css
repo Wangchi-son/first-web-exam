@@ -1,8 +1,14 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: #333333;
+}
+.section {
+    position: relative;
 }
 a {
     text-decoration: none;
@@ -17,6 +23,7 @@ header {
     height: 66px;
     display: flex;
     position: fixed;
+    top: 0;
 }
 header .container {
     width: 100%;
@@ -25,7 +32,13 @@ header .container {
     align-items: center;
     padding: 0 15px;
 }
-
+.container::after {
+    clear: both;
+}
+.container::before, .container::after {
+    display: table;
+    content: " ";
+}
 /* RIGHT CONTAINER */
 header .container .right-container {
     display: flex;
@@ -98,4 +111,47 @@ header .container .left-container .auth-divider {
 }
 header .container .left-container .util-item.auth-btn.register-btn {
     margin-left: 16px !important;
+}
+
+
+/* BANNER */
+.main-info {
+    position: fixed;
+    top: 66px;
+    width: 100%;
+    z-index: 39;
+}
+.main-info a .content {
+    width: 1500px;
+    height: 60px;
+    background: url(https://cdn.notefolio.net/uploads/banner/3a20eaf7a9b1b3a4fdb072ad43dba509.png);
+    background-size: cover;
+    line-height: 58px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* MAIN SECTION */
+.listing.v2 {
+    margin-top: 6px;
+}
+
+.main-banner-bg {
+    background-color: #fafafa;
+}
+
+.container.main {
+    padding: 0 30px;
+    min-width: 1500px;
+}
+
+.container.main .row {
+    margin: auto 0;
+}
+.row::after {
+    clear: both;
+}
+.row::before, .row::after {
+    display: table;
+    content: " ";
 }
